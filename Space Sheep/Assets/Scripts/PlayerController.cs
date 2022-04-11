@@ -10,7 +10,7 @@ public class PlayerController : SceneController
     private Rigidbody2D playerRB;
 
     // Start is called before the first frame update
-    virtual protected void Start()
+    void Start()
     {
         input = Vector2.zero;
         playerRB = gameObject.GetComponent<Rigidbody2D>();
@@ -34,5 +34,7 @@ public class PlayerController : SceneController
         transform.position = limitPos;
 
         #endregion
+
+        //Debug.Log("Player: /n Screen: " + horizontalBound + "," + verticalBound + "/n Height" + playerHalfHeight);
     }
 }
