@@ -5,6 +5,9 @@ using UnityEngine;
 public class ItemSpawner : MonoBehaviour
 {
     [SerializeField] private BarrierController Barrier;
+    [SerializeField] private BarrierController Food;
+
+    private int rand;
 
     // Start is called before the first frame update
     void Start()
@@ -16,7 +19,11 @@ public class ItemSpawner : MonoBehaviour
 
     void SpawnTime()
     {
-        Spawn(Barrier);
+        rand = Random.Range(1, 11);
+        if (rand > 6)
+            Spawn(Food);
+        else
+            Spawn(Barrier);
     }
 
 
