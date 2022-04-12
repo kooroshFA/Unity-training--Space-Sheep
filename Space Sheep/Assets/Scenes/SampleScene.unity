@@ -413,3 +413,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Barrier: {fileID: 2962610114211514126, guid: ea3d02d6e938a604eacacd61f30966e4, type: 3}
   Food: {fileID: 2327150195329088096, guid: 660d66a8ab3672541a7108ef7001ffc6, type: 3}
+  Wolf: {fileID: 5806431958629896867, guid: 737e988e25fc9bb4097a831ae569c106, type: 3}

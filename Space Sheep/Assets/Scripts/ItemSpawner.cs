@@ -6,6 +6,7 @@ public class ItemSpawner : MonoBehaviour
 {
     [SerializeField] private BarrierController Barrier;
     [SerializeField] private BarrierController Food;
+    [SerializeField] private BarrierController Wolf;
 
     private int rand;
 
@@ -19,11 +20,14 @@ public class ItemSpawner : MonoBehaviour
 
     void SpawnTime()
     {
-        rand = Random.Range(1, 11);
-        if (rand > 6)
+        rand = Random.Range(1, 30);
+        Debug.Log(rand);
+        if (rand < 10)
             Spawn(Food);
-        else
+        else if (rand < 26)
             Spawn(Barrier);
+        else
+            Spawn(Wolf);
     }
 
 
