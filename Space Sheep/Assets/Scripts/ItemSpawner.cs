@@ -22,7 +22,7 @@ public class ItemSpawner : MonoBehaviour
     {
         rand = Random.Range(1, 30);
         Debug.Log(rand);
-        if (rand < 10)
+        if (rand < 11)
             Spawn(Food);
         else if (rand < 26)
             Spawn(Barrier);
