@@ -5,8 +5,8 @@ using UnityEngine;
 
 public class SceneController : MonoBehaviour
 {
-    protected float verticalBound;
-    protected float horizontalBound;
+    public float verticalBound;
+    public float horizontalBound;
 
     protected float playerHalfHeight;
     protected float playerHalfWidth;
