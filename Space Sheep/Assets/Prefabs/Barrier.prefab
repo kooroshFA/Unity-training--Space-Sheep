@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 5928790218186947685}
   m_Layer: 0
   m_Name: Barrier
-  m_TagString: Untagged
+  m_TagString: Barrier
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -97,7 +97,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   verticalBound: 4.74085
-  horizontalBound: 2.306231
+  horizontalBound: 2.3053694
   downSpeed: 1
 --- !u!61 &5928790218186947685
 BoxCollider2D:

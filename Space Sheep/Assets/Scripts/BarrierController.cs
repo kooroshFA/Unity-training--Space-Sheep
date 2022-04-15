@@ -8,6 +8,7 @@ public class BarrierController : SceneController
 
     void Start()
     {
+        //downSpeed = 1;
         if(verticalBound == 0)
             GetScreenBounds(this.GetComponent<SpriteRenderer>());
     }
